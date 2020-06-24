@@ -1,9 +1,13 @@
 # php-mirai
 一个在<a href = "https://github.com/mamoe/mirai-console/">mirai-console</a>通过<a href="https://github.com/project-mirai/mirai-api-http">http api</a>运行的php sdk
 
-使用它需要安装<a href="https://github.com/project-mirai/mirai-api-http">http api</a>
-下载文件放到网站目录
-修改<a href="https://github.com/project-mirai/mirai-api-http">http api</a>插件的setting.yml在plugins/MiraiAPIHTTP/setting.yml
+使用它需要安装启动<a href = "https://github.com/mamoe/mirai-console/">mirai-console</a>
+然后生成plugins文件夹将<a href="https://github.com/project-mirai/mirai-api-http">http api</a>插件放进去
+重启mirai-console
+安装成功后会生成plugins/MiraiAPIHTTP目录
+创建setting.yml文件
+
+然后修改plugins/MiraiAPIHTTP/setting.yml 为以下内容：
 ```yaml
 ## 该配置为全局配置，对所有Session有效
 
@@ -55,4 +59,6 @@ report:
     # 填上你需要的请求头（如授权信息等）
     Authorization: basic xxx
 ```
-然后修改config.php即可
+然后下载所有文件安装到web目录，需要php版本>=5.4
+linux注意设置目录权限
+然后打开config.php按注释修改即可运行。
