@@ -1,4 +1,5 @@
 # php-mirai
+通过php来开发你的机器人。
 一个在<a href = "https://github.com/mamoe/mirai-console/">mirai-console</a>通过<a href="https://github.com/project-mirai/mirai-api-http">http api</a>运行的php sdk
 
 使用它需要安装启动<a href = "https://github.com/mamoe/mirai-console/">mirai-console</a>
