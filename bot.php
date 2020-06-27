@@ -379,7 +379,7 @@ class Bot{
 				$key = $results['session'];
                 $results = json_decode(getHttpData($url.'/verify', json_encode(['sessionKey' => $key, 'qq' => $qq])), true);
                 if($results['code']==0) {
-                    file_put_contents('key.php', "<?php\n\$key='" . $key . "';");
+                    file_put_contents(SITE_PATH.'key.php', "<?php\n\$key='" . $key . "';");
                     return true;
                 }
                 return false;
