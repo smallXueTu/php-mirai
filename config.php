@@ -18,7 +18,7 @@ getSessionKey();
  * 获取会话key
  */
 function getSessionKey(){
-	if(file_exists('key.php')){
+	if(file_exists(SITE_PATH.'key.php')){
 		global $key;
 		include SITE_PATH.'key.php';
 	}
